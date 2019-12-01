@@ -28,9 +28,14 @@ router.patch('/', (req, res) => {
     req.body.forEach((value) => {
         const id = value._id;
         const selected = value.isSelected;
-        Cinema.findOneAndUpdate({ _id: id }, { $set: { isSelected: selected } }).then(() => {
+        Cinema.findOneAndUpdate({ _id: id }, { $set: { isSelected: selected } })
+        .then(() => {
             console.log('congrats saved');
-        }).catch((err) => console.log(err));
+        })
+        .catch((err) => {
+            console.log(err);
+            throw err;
+        });
     });
     res.send({ message: 'success' });
 
