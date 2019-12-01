@@ -7,24 +7,43 @@ This project is Build using Angular 8 , NodeJS and MongoDB,
 1. Clone the project in the desired folder.
 2. You maust have Angular CLI 8 installed in your system.
 3. Run `npm install` to install node dependencies.
-4. Type `cd ticket-booking`
+4. Run `cd ticket-booking`
 5. Run `npm install` to install angular 8 dependencies.
+6. Run `ng build --prod` to build angular project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+7. Run `cd ..` to go one step back.
+8. Run `nodemon server.js` to run node server. Navigate to `http://localhost:9090/`. The app will automatically reload if you change any of the source files.
+9. To use mail service please configure mail credentials in . Please refer 'How to change configuration of application' section
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to change configuration of application
+All the node configuration is stored in the file 'config.json'
+To edit configuration
+1. Run `cd configuration`
+2. Open file config.json, now edit configuration
+`{
+    "node" :{
+        "port": 9090 
+    },
+    "mongo" :{
+        "url":"mongodb://localhost:27017/ticket_booking"
+    },
+    "email": {
+        "auth": {
+            "user": "youremail@gmail.com",
+            "password": "yourpassword"
+        },
+        "details": {
+            "from": "youremail@gmail.com",
+            "subject": "Seat Confirmation",
+            "text": "Hi, Your seat has been booked"
+        }
+    }
+}`
 
-## Build
-Angular project is kept in the `ticket-booking` folder
-So to build to project go to `cd ticket-booking` and 
-Run `ng build --prod` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+You can change the default node port.
+You can change mongourl to your desired mongo url
+You can set email auth credentials
+You can change default mail message.
 
-## Running unit tests
+## Changing angular environment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To change base url, go to environment.ts / environment.prod.ts and chenge the baseUrl
