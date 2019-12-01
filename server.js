@@ -48,7 +48,6 @@ process.on('uncaughtException', function (err) {
 /* handle an unhandled promise rejection */
 process.on('unhandledRejection', function (reason, promise) {
     console.error('unhandled rejection:', reason.message || reason);
-
     reporter("uncaughtException", (new Date).toUTCString(), reason.message || reason);
 })
 

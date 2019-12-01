@@ -1,3 +1,4 @@
+# Seat Booking Management System
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
@@ -11,10 +12,10 @@ This project is created for online Seat Booking System.This project is Build usi
 	
 ## Technologies
 Project is created with:
-* Angular 8
-* Node JS
-* MongoDB
-* Express
+* Angular v8
+* Node JS v10.16.0
+* MongoDB v5
+* Express v4
 	
 ## Setup
 To run this project, install it locally using npm:
