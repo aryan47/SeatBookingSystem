@@ -24,6 +24,7 @@ router.post('/', (req, res) => {
 });
 
 /** Used to update seat information */
+//TODO Transaction needs to be implemented
 router.patch('/', (req, res) => {
     req.body.forEach((value) => {
         const id = value._id;
