@@ -38,7 +38,8 @@ All the node configuration is stored in the file 'config.json'
 To edit configuration
 1. Run `cd configuration`
 2. Open file config.json, now edit configuration
-```{
+```
+{
     "node" :{
         "port": 9090 
     },
@@ -56,7 +57,8 @@ To edit configuration
             "text": "Hi, Your seat has been booked"
         }
     }
-}```
+}
+```
 
 * You can change the default node port.
 * You can change mongourl to your desired mongo url.
