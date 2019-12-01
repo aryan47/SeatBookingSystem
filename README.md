@@ -1,7 +1,7 @@
 # Seat Booking System
 
-This project is based on online Seat Booking System
-This project is Build using Angular 8 , NodeJS and MongoDB,
+This project is created for online Seat Booking System
+This project is Build using Angular 8, NodeJS and MongoDB,
 
 ## Process to run this project
 1. Clone the project in the desired folder.
