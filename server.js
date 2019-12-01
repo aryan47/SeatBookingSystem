@@ -5,10 +5,10 @@ const cors = require('cors');
 const seatBook = require('./routes/seat-book');
 const bodyParser = require('body-parser');
 const email = require('./email/email');
-const conf = require('./configuration/config.json')
+const config = require('./configuration/config.json')
 
 const app = express();
-const PORT = process.env.PORT || conf.node.port;
+const PORT = process.env.PORT || config.node.port;
 
 // Connect to mongodb
 
