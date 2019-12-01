@@ -1,0 +1,19 @@
+/*
+ * Created on Sun Dec 01 2019
+ * Created by - Ritesh Kant
+ *
+ */
+ 
+mat-form-field {
+    width: 100%;
+    font-size: 20px;
+}
+
+button {
+    background: green;
+    color: white;
+    display: block;
+    margin: 5px auto;
+    width: 110px;
+    font-size: 15px;
+}

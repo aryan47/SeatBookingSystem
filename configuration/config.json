@@ -1,0 +1,19 @@
+{
+    "node" :{
+        "port": 9090
+    },
+    "mongo" :{
+        "url":"mongodb://localhost:27017/ticket_booking"
+    },
+    "email": {
+        "auth": {
+            "user": "youremail@gmail.com",
+            "password": "yourpassword"
+        },
+        "details": {
+            "from": "youremail@gmail.com",
+            "subject": "Seat Confirmation",
+            "text": "Hi, Your seat has been booked"
+        }
+    }
+}

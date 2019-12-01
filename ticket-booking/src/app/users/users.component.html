@@ -1,0 +1,18 @@
+<!--
+ Created on Sun Dec 01 2019
+ Created by - Ritesh Kant
+
+-->
+<h1 mat-dialog-title>Fill Booking Details </h1>
+<hr>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput formControlName="userName" maxlength="10" placeholder="Enter your name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter your email" formControlName="email" required>
+    </mat-form-field>
+    <div mat-dialog-actions>
+        <button mat-button cdkFocusInitial>{{buttonStatus}}</button>
+    </div>
+</form>

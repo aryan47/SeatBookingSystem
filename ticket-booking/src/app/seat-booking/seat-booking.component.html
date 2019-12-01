@@ -1,0 +1,22 @@
+<!--
+ Created on Sun Dec 01 2019
+ Created by - Ritesh Kant
+
+-->
+
+<div style="width: 100px; margin: 20px auto; display: block;">
+    <span [ngClass]="{'seat-disabled': true}">reserved</span>
+    <span [ngClass]="{'seat-selected': true}">selected</span>
+    <span [ngClass]="{'seat-select':true}">available</span>
+</div>
+<div class="container-fluid">
+    <table>
+        <tr *ngFor="let row of rows">
+            <td *ngFor="let seat of seats">
+                <div [ngClass]="{'seat-select': !checkSeatStatus(row+''+seat), 'seat-selected':checkSeatStatus(row+''+seat), 'seat-disabled':isSeatReserved(row+''+seat)}"
+                    (click)="seatSelect(row+''+seat)">{{row+''+seat}}</div>
+            </td>
+        </tr>
+    </table>
+    <button (click)="openDialog()" id="submitButton">Book Seat</button>
+</div>

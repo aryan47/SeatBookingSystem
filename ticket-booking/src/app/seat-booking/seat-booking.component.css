@@ -1,0 +1,53 @@
+/*
+ * Created on Sat Nov 30 2019
+ * Created by - Ritesh Kant
+ *
+ */
+
+/* .container-fluid {
+    width: 100%;
+} */
+
+table {
+    border: 1px solid;
+    margin: auto;
+    width: 80% !important;
+    height: 70% !important;
+}
+
+.seat-select {
+    cursor: pointer;
+    background: rgb(226, 224, 224);
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: grey;
+}
+
+.seat-selected {
+    cursor: pointer;
+    background: rgb(74, 158, 74);
+    color: white;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.seat-disabled {
+    cursor: not-allowed;
+    background: brown;
+    color: white;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#submitButton {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 21px;
+}
