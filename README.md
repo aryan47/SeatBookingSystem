@@ -3,9 +3,9 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Process to run](#process-to-run)
 * [Setup mail service](#setup-mail-service)
 * [How to change configuration of NODE application](#how-to-change-configuration-of-NODE-application)
+* [How to change configuration of Angular application](#How-to-change-configuration-of-angular-application)
 
 ## General info
 This project is created for online Seat Booking System.This project is Build using Angular 8, NodeJS and MongoDB,
