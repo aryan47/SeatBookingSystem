@@ -18,6 +18,7 @@ Project is created with:
 * Express v4
 	
 ## Setup
+To run this project you need mongoDB server installed in your system [MongoDB](https://docs.mongodb.com/manual/installation/), and [Node](https://nodejs.org/en/download/).
 To run this project, install it locally using npm:
 
 ```
